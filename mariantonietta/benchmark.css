@@ -1,0 +1,66 @@
+body {
+    background: linear-gradient(-53deg, rgba(12, 17, 59, 1) 30%, rgba(101, 36, 105, 1) 50%, rgba(101, 36, 105, 1) 60%, rgba(12, 17, 59, 1) 70%);
+    background-size: cover;
+    text-align: center;
+}
+
+.logo {
+    float: left;
+    width: 10em
+}
+
+.divLogo {
+    margin-left: 5em;
+    margin-top: 0%;
+}
+
+#logo {
+    width: 13%;
+    margin-right: 75em;
+    margin-top: 3.3em;
+}
+
+#domandaUno {
+    color: white
+    
+}
+
+.domande {
+    margin-top: 10em;
+}
+
+.button {
+    text-align: center;
+    width: 300px; 
+    height: 50px;
+    border-radius: 10em;
+    border: solid transparent;
+    background-color: rgba(255, 253, 253, 0.1);
+    color: white;
+    font-weight: bold;
+    margin: 1em;
+    box-shadow: -1px -2px 4px rgba(255, 255, 255, 1);
+}
+
+.domanda {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: white;
+    font-size: 3em;
+    margin-right: 5em;
+    margin-left: 5em;
+}
+
+.question {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    margin-top: 11.5em;
+    color: white;
+    letter-spacing: 1.5px; 
+}
+
+.question span {
+    color: #c82474;
+}
