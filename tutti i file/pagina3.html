@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pagina3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="./assets/epicode_logo.png" alt="Logo Epicode" width="12%">
+        <div id="titolo">Risultati</div>
+        <div id="sotto_titolo">Sommario delle tue risposte:</div>
+    </header>
+
+    <section>
+        <div class="progress-bar-card">
+            <div class="progress-bar">
+              <svg viewbox="-10 -10 160 160">
+                <circle class="inner" cx="70" cy="70" r="70"></circle>
+                <circle class="outer" cx="70" cy="70" r="70"></circle>
+              </svg>
+            </div>
+            <div id="messaggio"></div>    
+        </div>
+    </section>
+    <div class="giuste">
+      <h2 class="prima">Corrette</h2>
+      <h2 class="seconda"><span id="perc1"></span>%</h2>
+      <p class="terza"><span id="numGiuste"></span>/10 domande</p>
+    </div>
+    <div class="sbagliate">
+      <h2 class="prima">Sbagliate</h2>
+      <h2 class="seconda"><span id="perc2"></span>%</h2>
+      <p class="terza"><span id="numSbagliate"></span>/10 domande</p>
+    </div>
+    <div id="bottone">
+      <button id="btn">VALUTACI</button>
+    </div>
+
+    <script>
+
+      const risposteEsatte = sessionStorage.getItem('correctAnswers');
+
+      function generaRisultati(risposte) {
+         let risposteSbagliate = 10 - risposte;
+         let percentGiuste = (risposte / 10) * 100;
+         let percentSbagliate = (risposteSbagliate / 10) * 100;
+         percentGiuste;
+         document.getElementById("perc1").innerText = percentGiuste;
+         document.getElementById("perc2").innerText = percentSbagliate;
+         document.getElementById("numGiuste").innerText = risposteEsatte;
+         document.getElementById("numSbagliate").innerText = risposteSbagliate;
+         let rootElement = document.documentElement;
+         let nuovaPercentuale = (440 -(440 * percentGiuste) / 100);
+         rootElement.style.setProperty('--percentuale', nuovaPercentuale);
+      }
+
+      const myButton = document.getElementById('btn');
+      myButton.addEventListener('mouseenter', function() {
+        myButton.classList.add('custom-cursor');
+      });
+      myButton.addEventListener('mouseleave', function() {
+        myButton.classList.remove('custom-cursor');
+      });
+      generaRisultati(risposteEsatte);
+      const messaggio = function (){
+        const messaggio1 = `
+        <h4>Congratulazioni!</h4>
+        <h5>Hai passato l'esame</h5>
+        <p>Ti invieremo il certificato</p>
+        <p>in pochi minuti</p>
+        <p>Controlla la tua mail</p>
+        <p>incluse spam e promozioni</p>  
+        `;
+        const messaggio2 = `<h6>Test Fallito!</h6>`;
+        if (risposteEsatte <= 5) {return messaggio2;}
+        else {return messaggio1;}
+      }
+      
+      document.getElementById('messaggio').innerHTML = messaggio();
+      btn.addEventListener('click',() => {
+            window.location.href = './pagina4.html';
+        });
+
+
+    </script>
+</body>
+</html>
+
+<!--  
+
+               
+
+
+-->

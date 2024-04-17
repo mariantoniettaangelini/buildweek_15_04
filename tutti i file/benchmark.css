@@ -1,0 +1,180 @@
+body {
+    /*background: linear-gradient(-53deg, rgba(12, 17, 59, 1) 30%, rgba(101, 36, 105, 1) 50%, rgba(101, 36, 105, 1) 60%, rgba(12, 17, 59, 1) 70%);*/
+    background-image: url(../assets/bg.jpg);
+     background-size: cover;
+     text-align: center;
+     /*overflow: hidden;*/
+     box-sizing: border-box;
+     }
+ 
+header{
+    height: 10rem;
+}
+ 
+ .divLogo {
+     margin: 0;
+ }
+ 
+ #logo {
+     width: 150px;
+     float: left;
+     margin: 2em 0 0 5em;
+ }
+ 
+#container{
+    margin: 0 20%;
+}
+
+ #domandaUno {
+     color: white
+ 
+ }
+ 
+ #domande {
+     margin-top: 8%;
+ }
+ 
+ .btn {
+     text-align: center;
+     width: 45%; 
+     height: 5rem;
+     border-radius: 10em;
+     background-color: rgba(255, 253, 253, 0.1);
+     color: white;
+     font-weight: bold;
+     margin: 1em;
+     box-shadow: -1px -2px 4px rgba(255, 255, 255, 1);
+     cursor: pointer;
+ }
+
+  .btn_selected {
+    text-align: center;
+     width: 45%; 
+     height: 5rem;
+     border-radius: 10em;
+     background-color: rgba(253, 7, 179, 0.8);
+     color: white;
+     font-weight: bold;
+     margin: 1em;
+     box-shadow: -1px -2px 4px rgb(255, 255, 255);
+     cursor: pointer;
+  }
+  
+  #domanda {
+     font-family: "Inter", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 400;
+     color: white;
+     font-size: 3em;
+     margin: 1em 20% 2em 20%;
+ }
+ 
+ .question {
+     font-family: "Inter", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 600;
+     margin-top: 8%;
+     color: white;
+     letter-spacing: 1.5px; 
+ }
+ 
+ .question span {
+     color: #c82474;
+ }
+ 
+ #procedi {
+     float: right;
+     margin-right: 20%;
+     margin-top: 2%;
+     width: 10%;
+     height: 3rem;
+     cursor: pointer;
+ }
+ 
+
+/* css per il timer */
+
+  
+  .base-timer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .base-timer__svg {
+    transform: scaleX(-1);
+  }
+  
+  .base-timer__circle {
+    fill: none;
+    stroke: none;
+  }
+  
+  .base-timer__path-elapsed {
+    stroke-width: 7px;
+    stroke: none;
+
+  }
+  
+  .base-timer__path-remaining {
+    stroke-width: 7px;
+    stroke-linecap: round;
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: 1s linear all;
+    fill-rule: nonzero;
+    stroke: currentColor;
+  }
+  
+  .base-timer__path-remaining.green {
+    color: rgb(65, 184, 131);
+  }
+  
+  .base-timer__path-remaining.orange {
+    color: orange;
+  }
+  
+  .base-timer__path-remaining.red {
+    color: red;
+    
+  }
+  
+  .base-timer__label {
+    font-family: sans-serif;
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: 700;
+
+  }
+
+  .second_txt {
+    font-family: sans-serif;
+    color: white;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 4.5em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8em;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+#timer {
+        float: right;
+        width: 120px;
+        margin: 5em 5em 0 0;
+}
+

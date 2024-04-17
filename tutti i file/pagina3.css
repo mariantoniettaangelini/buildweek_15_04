@@ -1,0 +1,253 @@
+:root {
+    --percentuale: 0;
+}
+
+body {
+  background: linear-gradient(-53deg, rgba(12, 17, 59, 1) 30%, rgba(101, 36, 105, 1) 50%, rgba(101, 36, 105, 1) 60%, rgba(12, 17, 59, 1) 70%);
+  /*background-image: url(./assets/bg.jpg);*/
+   background-size: cover;
+   text-align: center;
+   overflow: hidden;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   width: 100%;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 80vh;
+    font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  }
+  
+h6 {
+  margin-top: 100px;
+  text-align: center;
+  color: red;
+  font-size: 50px;
+  line-height: 70px;
+/*  border: 1px solid yellow;*/
+}
+
+#logo {
+    margin: 2% 0 0 5%;
+    width: 13%;
+    margin-right: 75%;
+}
+
+#titolo {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    margin: 1% 0 -1.5% 0;
+    color:  white;
+    text-align: center;
+    font-size: 60px;
+  }
+
+#sotto_titolo {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    margin: 1% 0 -15% 0;
+
+    color:  white;
+    text-align: center;
+    font-size: 30px;
+}
+.progress-bar-card {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  
+  .progress-bar-card .progress-bar {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .progress-bar-card .progress-bar svg circle {
+    fill: none;
+    stroke-width: 20px;
+    stroke: #000;
+  
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+  }
+  
+  .progress-bar-card .progress-bar svg circle.inner {
+    stroke: #D20094;
+    stroke-dashoffset: 0;
+  }
+  
+  .progress-bar-card .progress-bar svg circle.outer {
+    stroke: #00FFFF;
+    animation: anim-progress-border 2s forwards;
+  }
+  
+  @keyframes anim-progress-border {
+    100% {
+      stroke-dashoffset: var(--percentuale); /* calc(440 - 440 * 75 / 100); */ /* 110 */
+    }
+  }
+  
+  .progress-bar-card .progress-bar .giuste_sbagliate {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d0d0d0;
+  }
+  
+  .progress-bar-card .progress-bar .giuste_sbagliate h2 {
+    margin-top: -5lvh;
+    font-size: 50px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .progress-bar-card .progress-bar .giuste_sbagliate h2 span.risposte-giuste {
+    margin-left: -80lvh;
+
+  }
+
+  .progress-bar-card .progress-bar .giuste_sbagliate h2 span.risposte-sbagliate {
+    margin-left: 100lvh;
+
+  }
+
+  
+  .progress-bar-card .progress-bar .giuste_sbagliate h2 span.pecent_giuste {
+    font-weight: bold;
+    margin-top: 26lvh;
+    margin-left: -310lvh;
+
+  }
+
+.giuste {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    margin: 0;
+    margin-right: 68%;
+    margin-left: 13%;
+    color: white;
+    transform: translate(15%, -150%);
+  }  
+
+.giuste .prima {
+   font-weight: normal;
+   margin: 0;
+   font-size: 50px;
+}
+
+.giuste .seconda {
+   margin: 0;
+   font-weight: bold;
+   font-size: 50px;
+   line-height: 8lvh;
+}
+
+.giuste .terza {
+   line-height: 0;
+}
+
+.sbagliate {
+   font-family: "Outfit", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 500;
+   margin-right: 83%;
+   color: white;
+   transform: translate(410%, -260%);
+  } 
+.sbagliate .prima {
+   font-weight: normal;
+   margin: 0;
+   font-size: 50px;
+  }
+  
+.sbagliate .seconda {
+    margin: 0;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 8lvh;
+  }
+  
+.sbagliate .terza {
+    line-height: 0;
+  }
+
+
+
+#messaggio {
+    padding: 17%;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;   
+    color: white;
+    text-align: center;
+    margin-left: 3%;
+  }
+
+#messaggio h4 {
+    line-height: 0%;
+    font-size: 20px;
+  }
+
+#messaggio h5 {
+    font-size: 20px;
+    line-height: 3%;
+    color: #00FFFF;
+  }
+
+#messaggio p {
+    font-size: 12px;
+    line-height: 10%;
+  }
+
+#bottone {
+  margin-top: -19%;
+  padding: 1%;
+  text-align: center;
+}
+
+#btn {
+  background-color: transparent;
+  color: white;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;  
+  font-optical-sizing: auto;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;   
+  padding: 1% 3% 1%;
+  border: 2px solid rgb(255, 255, 255);
+  opacity: 0.7;
+  box-shadow: 0px 0px 10px #0ffff0;
+}
+
+
+
+button {
+  cursor: pointer; /* Imposta il cursore predefinito sui bottoni */
+}
+.custom-cursor {
+  color: #00FFFF;
+  cursor: pointer; /* Imposta il cursore personalizzato */
+}

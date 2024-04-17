@@ -1,0 +1,93 @@
+body {
+    background: linear-gradient(-53deg, rgba(12, 17, 59, 1) 30%, rgba(101, 36, 105, 1) 50%, rgba(101, 36, 105, 1) 60%, rgba(12, 17, 59, 1) 70%);
+  /*background-image: url(./assets/bg.jpg);*/
+   background-size: cover;
+   text-align: center;
+   overflow: hidden;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   width: 100%;
+}
+/*****************************header******************************/
+#logo{
+    margin: 2% 0 0 5%;
+    width: 13%;
+    margin-right: 75%;
+}
+/******************************main********************************/
+#title{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 60px;
+    color: white;
+    margin-bottom: 0.5em;
+}
+.comtitle{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size:large;
+    color: white;
+}
+main{
+    text-align: center;
+}
+.stella
+{
+    width: 50px;
+    height: 50px;
+    
+}
+.star
+{
+    width: 50px;
+    height: 50px;
+    
+}
+#rec{
+    margin-top: 0.5em;
+    letter-spacing: 0.5em;
+}
+/**************************comment section*************************/
+.comment-section {
+    padding: 20px;
+}
+textarea {
+    width: 75%;
+    padding: 20px 0 0;
+    height: 2.5em;
+}
+#comment{
+    margin-top: 10px;
+    padding: 0%;
+    border: none;
+    border-bottom: 3px solid #c202ab;
+    box-sizing: border-box; 
+    resize: none; 
+    overflow: hidden; 
+    color: white;
+    background-color: transparent; 
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: large;
+}
+
+#more {
+    margin-top: 50px;
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #00ffff;
+    color: #0B113B;
+    box-shadow: 0px 0px 30px #0ffff0;
+    border: transparent;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+}
+/****************************footer********************************/
+ #s1{
+ display: none;
+}
