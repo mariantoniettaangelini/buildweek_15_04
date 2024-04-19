@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="language-switcher">
+        <button class="language-btn">
+            <img class="language-flag" src="./assets/bandiera_italiana.jpeg" alt="Switch Language">
+        </button>
+    </div>
+    
+    
+    <header>
+        <div class="divLogo">
+            <img class="logo" src="./assets/epicode_logo.png" id="logo">
+        </div>
+    </header>
+<main class="firstPage">
+<!---------- PARTE IN ITALIANO ------------->
+<div class="testoita italian-text">
+    <p id="Title">
+        Benvenuto al <br><b>tuo esame</b>
+    </p>
+
+    <h3>Instruzioni</h3>
+    <p>
+        Non ci aspettiamo che la maggior parte degli ingegneri sappia la risposta a tutte queste domande, quindi non preoccuparti se hai dubbi su alcune di esse.
+    </p>
+    <ul id="lista">
+        <li>Ogni domanda è a <b>tempo</b> e può essere <b>risposta una sola volta.</b></li>
+        <li>Cambiare la scheda del browser o aprire altre finestre <b>invalida la domanda.</b></li>
+        <li>L'esame durerà circa <b>0-5 minuti.</b></li>
+    </ul>
+    
+
+    <div class="checkbox">
+        <label class="">
+        <input type="checkbox" class="check">
+        <span>Prometto di rispondere alle domande da solo senza l'aiuto di nessuno</label>
+        <form action="./pagina2.html" method="get">
+            <button class="procedere">PROCEDERE</button>
+        </form>
+    </div>
+</div>
+<!---------- PARTE IN INGLESE ----------->
+<div class="texteng english-text" style="display:none;">
+    <p class="Title">
+        Welcome to <br><b>your exam</b>
+    </p>
+
+    <h3>Instructions</h3>
+    <p>
+        We do not expect most engineers to know the answer to all these questions, so don't worry if you are unsure about some of them.
+    </p>
+    <ul id="lista">
+        <li>Each question is <b>timed</b> and can be <b>answered only once.</b></li>
+        <li>Changing the browser tab or opening other windows <b>invalidates the question.</b></li>
+        <li>The exam will last about <b>0-5 minutes.</b></li>
+    </ul>
+
+
+    <div class="checkbox">
+        <label class="">
+        <input type="checkbox" class="check">
+        <span>I promise to answer the questions on my own without anyone's help</span></label>
+        <form action="./pagina2.html" method="get">
+            <button class="procedere">PROCEED</button>
+        </form>
+    </div>
+</div>
+</main>
+
+<script src="./pagina1.js">
+</script>
+</body>
+</html>

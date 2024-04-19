@@ -1,0 +1,603 @@
+/************************************************* ALL PAGES ************************************************/
+
+body {
+    background: linear-gradient(-53deg, rgba(12, 17, 59, 1) 30%, rgba(101, 36, 105, 1) 50%, rgba(101, 36, 105, 1) 60%, rgba(12, 17, 59, 1) 70%);
+    /*background-image: url(./assets/bg.jpg);*/
+     background-size: cover;
+     text-align: center;
+     overflow: hidden;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+     width: 100%;
+     color: white;
+     font-family: "Outfit", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 500;
+}
+
+
+.logo {
+    margin: 2% 0 0 5%;
+    width: 13%;
+    margin-right: 75%;
+   }
+
+#procedi {
+    float: right;
+    margin-top: 10%;
+    margin-left: 40%;
+    width: 10%;
+    height: 40px;
+    background-color: transparent;
+    color: white;
+    position: fixed;
+    top: 72%;
+    left: 48%;
+    border: solid white 2px;
+    opacity: 0.7;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+}
+#title{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 60px;
+    color: white;
+    margin-bottom: 0.5em;
+    font-size: 50px;
+}
+/************************************************* PAGINA 1 ************************************************/
+
+.firstPage {
+    margin-left: 10%;
+    margin-top: 5%;
+    text-align: left;
+}
+
+
+h3 {
+    color: #C2128D;
+
+}
+
+li {
+    padding: 5px;
+}
+
+.checkbox  {
+    margin-top: 5%;
+    justify-content: space-between;
+    margin-right: 20%;
+    font-weight: normal;
+}
+
+#check {
+    width: 20px;
+    height: 15px;
+    background: transparent;
+    accent-color: 00ffff;
+
+}
+
+.procedere {
+    font-size: large;
+    padding: 1em;
+    font-weight: bolder;
+    background-color: #00ffff;
+    box-shadow: 0px 0px 30px #0ffff0;
+    border: transparent;
+    float: right;
+    cursor: pointer;   
+}
+
+
+
+#lista {
+    padding: 1em;
+}
+
+#language-switcher {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.language-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.language-btn img {
+    width: 30px; /* Adjust size as needed */
+}
+
+/*************** PAGINA 2 ***************/
+
+#domandaUno {
+     color: white
+ 
+ }
+ 
+ #domande {
+     margin-top: 8%;
+ }
+ 
+ .btn {
+     text-align: center;
+     width: 300px; 
+     height: 50px;
+     border-radius: 10em;
+     background-color: rgba(255, 253, 253, 0.1);
+     color: white;
+     font-family: "Outfit", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 500;
+     margin: 1em;
+     box-shadow: -1px -2px 4px rgba(255, 255, 255, 1);
+     border: transparent;
+ }
+ 
+ #domanda {
+     text-align: center;
+     font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+     color: white;
+     font-size: 3em;
+     margin-right: 20%;
+     margin-left: 20%;
+     margin-top: 8%;
+ }
+
+ #answer-buttons {
+     margin-right: 20%;
+     margin-left: 20%;
+     position: fixed;
+     top: 55%;
+     font-family: "Outfit", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 500;
+ }
+ 
+ .question {
+     font-family: "Outfit", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 500;
+     margin-top: 12%;
+     color: white;
+     letter-spacing: 1.5px; 
+     margin-left: 3%;
+ }
+ 
+ .question span {
+     color: #c82474;
+ }
+ 
+ #result{
+    color: white;
+ }
+ footer {
+    position: fixed;
+    bottom: 0;
+}
+.btn_selected {
+    text-align: center;
+    width: 300px; 
+    height: 50px;
+     border-radius: 10em;
+     background-color: rgba(253, 7, 179, 0.8);
+     color: white;
+     font-weight: bold;
+     margin: 1em;
+     box-shadow: -1px -2px 4px rgb(255, 255, 255);
+     cursor: pointer;
+  }
+  
+  #google_translate_element {
+    position: absolute;
+    top: 0; 
+    right: 0;
+    z-index: 1000; 
+  }
+  
+  img.goog-te-gadget-icon {
+    border-radius: 10px;
+  }
+  
+  .goog-te-gadget-simple {
+    border-radius: 10px;
+    margin-top: 25%;
+  }  
+/***************timer*******************/
+.base-timer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .base-timer__svg {
+    transform: scaleX(1);
+  }
+  
+  .base-timer__circle {
+    fill: none;
+    stroke: none;
+  }
+  
+  .base-timer__path-elapsed {
+    stroke-width: 7px;
+    stroke: none;
+
+  }
+  
+  .base-timer__path-remaining {
+    stroke-width: 7px;
+    stroke-linecap: round;
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: 1s linear all;
+    fill-rule: nonzero;
+    stroke: currentColor;
+  }
+  
+  .base-timer__path-remaining.green {
+    color: rgb(65, 184, 131);
+  }
+  
+  .base-timer__path-remaining.orange {
+    color: orange;
+  }
+  
+  .base-timer__path-remaining.red {
+    color: red;
+    
+  }
+  
+  .base-timer__label {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: 700;
+
+  }
+
+  .second_txt {
+    font-family: sans-serif;
+    color: white;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 4.5em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8em;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+#timer {
+        float: right;
+        width: 120px;
+        margin-bottom: 70%;
+        margin-right: 5%;
+}
+
+/************************************************* PAGINA 3 ************************************************/
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 80vh;
+    font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  }
+  
+h6 {
+  margin-top: 100px;
+  text-align: center;
+  color: red;
+  font-size: 50px;
+  line-height: 70px;
+/*  border: 1px solid yellow;*/
+}
+
+
+#titolo {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    margin: 1% 0 -1.5% 0;
+    color:  white;
+    text-align: center;
+    font-size: 60px;
+  }
+
+#sotto_titolo {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    margin: 1% 0 -15% 0;
+
+    color:  white;
+    text-align: center;
+    font-size: 30px;
+}
+.progress-bar-card {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  
+  .progress-bar-card .progress-bar {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .progress-bar-card .progress-bar svg circle {
+    fill: none;
+    stroke-width: 20px;
+    stroke: #000;
+  
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+  }
+  
+  .progress-bar-card .progress-bar svg circle.inner {
+    stroke: #D20094;
+    stroke-dashoffset: 0;
+  }
+  
+  .progress-bar-card .progress-bar svg circle.outer {
+    stroke: #00FFFF;
+    animation: anim-progress-border 2s forwards;
+  }
+  
+  @keyframes anim-progress-border {
+    100% {
+      stroke-dashoffset: var(--percentuale); /* calc(440 - 440 * 75 / 100); */ /* 110 */
+    }
+  }
+  
+  .progress-bar-card .progress-bar .giuste_sbagliate {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d0d0d0;
+  }
+  
+  .progress-bar-card .progress-bar .giuste_sbagliate h2 {
+    margin-top: -5lvh;
+    font-size: 50px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .progress-bar-card .progress-bar .giuste_sbagliate h2 span.risposte-giuste {
+    margin-left: -80lvh;
+
+  }
+
+  .progress-bar-card .progress-bar .giuste_sbagliate h2 span.risposte-sbagliate {
+    margin-left: 100lvh;
+
+  }
+
+  
+  .progress-bar-card .progress-bar .giuste_sbagliate h2 span.pecent_giuste {
+    font-weight: bold;
+    margin-top: 26lvh;
+    margin-left: -310lvh;
+
+  }
+
+.giuste {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    margin: 0;
+    margin-right: 68%;
+    margin-left: 13%;
+    color: white;
+    transform: translate(15%, -150%);
+  }  
+
+.giuste .prima {
+   font-weight: normal;
+   margin: 0;
+   font-size: 50px;
+}
+
+.giuste .seconda {
+   margin: 0;
+   font-weight: bold;
+   font-size: 50px;
+   line-height: 8lvh;
+}
+
+.giuste .terza {
+   line-height: 0;
+}
+
+.sbagliate {
+   font-family: "Outfit", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 500;
+   margin-right: 83%;
+   color: white;
+   transform: translate(410%, -260%);
+  } 
+.sbagliate .prima {
+   font-weight: normal;
+   margin: 0;
+   font-size: 50px;
+  }
+  
+.sbagliate .seconda {
+    margin: 0;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 8lvh;
+  }
+  
+.sbagliate .terza {
+    line-height: 0;
+  }
+
+#messaggio {
+    padding: 17%;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;   
+    color: white;
+    text-align: center;
+    margin-left: 3%;
+  }
+
+#messaggio h4 {
+    line-height: 0%;
+    font-size: 20px;
+  }
+
+#messaggio h5 {
+    font-size: 20px;
+    line-height: 3%;
+    color: #00FFFF;
+  }
+
+#messaggio p {
+    font-size: 12px;
+    line-height: 10%;
+  }
+
+#bottone {
+  margin-top: -19%;
+  padding: 1%;
+  text-align: center;
+}
+
+#btn {
+  background-color: transparent;
+  color: white;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;  
+  font-optical-sizing: auto;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;   
+  padding: 1% 3% 1%;
+  border: 2px solid rgb(255, 255, 255);
+  opacity: 0.7;
+  box-shadow: 0px 0px 10px #0ffff0;
+}
+
+button {
+  cursor: pointer; /* Imposta il cursore predefinito sui bottoni */
+}
+.custom-cursor {
+  color: #00FFFF;
+  cursor: pointer; /* Imposta il cursore personalizzato */
+}
+
+/************************************************* PAGINA 4 ************************************************/
+
+
+
+.comtitle{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size:large;
+    color: white;
+}
+main{
+    text-align: center;
+}
+.stella
+{
+    width: 50px;
+    height: 50px;
+    
+}
+.star
+{
+    width: 50px;
+    height: 50px;
+    
+}
+#rec{
+    margin-top: 0.5em;
+    letter-spacing: 0.5em;
+}
+/**************************comment section*************************/
+.comment-section {
+    padding: 20px;
+}
+textarea {
+    width: 75%;
+    padding: 20px 0 0;
+    height: 2.5em;
+}
+#comment{
+    margin-top: 10px;
+    padding: 0%;
+    border: none;
+    border-bottom: 3px solid #c202ab;
+    box-sizing: border-box; 
+    resize: none; 
+    overflow: hidden; 
+    color: white;
+    background-color: transparent; 
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: large;
+}
+
+#more {
+    margin-top: 50px;
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #00ffff;
+    color: #0B113B;
+    box-shadow: 0px 0px 30px #0ffff0;
+    border: transparent;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+}
+/****************************footer********************************/
+ #s1{
+ display: none;
+}
